@@ -7,12 +7,12 @@ The form is responsive, ensuring that users can easily enter and submit their de
 
 # Features
 
-1.Google Sheets Integration: The form submissions are connected to a Google Sheet, so every entry is automatically added to the sheet in real-time.
+1. Google Sheets Integration: The form submissions are connected to a Google Sheet, so every entry is automatically added to the sheet in real-time.
 
-2.User Notification: Users are informed with a success message when their data has been successfully submitted.
+2. User Notification: Users are informed with a success message when their data has been successfully submitted.
 
-3.Dark and Light Mode: Users can switch between dark and light mode, with their preferences saved using local storage.
+3. Dark and Light Mode: Users can switch between dark and light mode, with their preferences saved using local storage.
 
-4.Responsive Design: The form layout is optimized for all devices, including mobile phones, tablets, and desktops.
+4. Responsive Design: The form layout is optimized for all devices, including mobile phones, tablets, and desktops.
 
-5.Global Accessibility: Users can fill out and submit the form from any location globally, provided they have internet access.
+5. Global Accessibility: Users can fill out and submit the form from any location globally, provided they have internet access.
