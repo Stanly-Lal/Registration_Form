@@ -197,6 +197,9 @@ input::placeholder {
   text-align: center;
   margin: 15px 0 10px 0;
   padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #sheet-btn {
@@ -427,4 +430,16 @@ footer {
   #current-time {
     font-size: 1.2rem;
   }
+  #sheet-btn {
+    font-size: 1rem;
+    padding: 5px 6px;
+  }
+}
+
+@media (max-width: 295px) {
+  #sheet-btn {
+    font-size: 0.8rem;
+    padding: 5px 6px;
+  }
+
 }
