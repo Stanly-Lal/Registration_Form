@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather report</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration_Form</title>
+  </head>
+  <body>
     <!-- HEADER PAFRT && LIGHT-DARK MODE################## -->
     <header>
-        <h1>WEATHER APP</h1>
-        <div id="toggle-container">
-            <div class="light-mode"><i class="fa-solid fa-sun"></i></div>
-        </div>
+      <h1 id="logo">Registration_Form</h1>
+      <div id="toggle-container">
+        <div class="light-mode"><i class="fa-solid fa-sun"></i></div>
+      </div>
     </header>
     <!-- REAL TIME AREA########################## -->
     <div class="time-container">
-        <p id="current-time"></p>
+      <p id="current-time"></p>
     </div>
     <!-- MAIN CONTENT B0X PART STARTS############### -->
     <div class="main-container">
-      <div class="secondry-container"> 
-        <div class="search-container">
-            <input type="text" id="input-value" placeholder="Enter your location here.....">
-            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
-        </div>
-        <div class="content-container">
-            <div class="area-container">
-              <h2 class="hard-code" id="name"> Search location.... </h2>
-              <h2 class="hard-code" id="country"> </h2>
-            </div>
-            <div class="temp-time">
-                <p id="time">Time: .....</p>
-                <p id="temp">Temp: .....</p>
-            </div>
-            <div class="last-part">
-                <p id="text"> </p>
-                <img src="" id="icon">
-                <p id="day"></p>
-            </div>
-        </div>
-        <button id="gps">Use Current Location <i class="fa-solid fa-location-crosshairs"></i></button>  
-     </div> 
+      <div class="secondry-container">
+        <form id="form-container" method="post">
+          <div id="res"></div>
+          <div id="inputContainer-one" class="inputs-container">
+            <label for="name-field" id="name-label">Name: </label>
+            <input
+              placeholder="Enter your name here......"
+              id="name-field"
+              type="text"
+              name="name"
+              required
+            />
+          </div>
+          <div class="inputs-container">
+            <label for="email-field" id="email-label">E-mail: </label>
+            <input
+              placeholder="Enter your email here......"
+              id="email-field"
+              type="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="inputs-container">
+            <label for="phone-field" id="phone-label">Phone: </label>
+            <input
+              placeholder="Enter your phone number here......"
+              id="phone-field"
+              type="text"
+              name="phone"
+              required
+            />
+          </div>
+          <div class="submit-container">
+            <a href="https://docs.google.com/spreadsheets/d/1lNj4Yyqw_zTFC_GNTl6A0cr_NrWP5IfmVrLcz9W4st4/edit?gid=0#gid=0" target="_blank" id="sheet-btn">Sheet Link</a>
+            <button id="submit-btn" name="btn">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
+    <footer class="footer">
+      <div class="foot-container">
+        <p class="developer-info">Designed by Stan|Dev</p>
+        <p class="rights-disclaimer">All Rights Reserved®</p>
+      </div>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
